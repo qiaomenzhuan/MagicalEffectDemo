@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qbs_ip4" translatesAutoresizingMaskIntoConstraints="NO" id="Eg0-0f-Szm">
+                                <rect key="frame" x="30" y="215.5" width="315" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Eg0-0f-Szm" secondAttribute="height" multiplier="4:3" id="LTB-Py-zce"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPm-Fp-VXz">
+                                <rect key="frame" x="162.5" y="20" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wv4-DJ-6Zd"/>
+                                    <constraint firstAttribute="width" constant="50" id="qLS-x0-bMC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="向下">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="botttom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lar-oX-owI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kho-KX-lrb">
+                                <rect key="frame" x="0.0" y="308.5" width="30" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EEt-Wr-6rs"/>
+                                    <constraint firstAttribute="height" constant="50" id="f9C-At-v3F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="向右">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SoU-Vv-jWa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL9-wB-6SQ">
+                                <rect key="frame" x="162.5" y="637" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="f8y-qh-km7"/>
+                                    <constraint firstAttribute="height" constant="30" id="lpI-8T-M7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="向上">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="top:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20a-r1-ob9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9M-8b-FVi">
+                                <rect key="frame" x="345" y="308.5" width="30" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="APN-JZ-R97"/>
+                                    <constraint firstAttribute="width" constant="30" id="Irj-58-hsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="向左">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4f-Hg-vLJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eg0-0f-Szm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5ZX-GU-sZc"/>
+                            <constraint firstItem="d9M-8b-FVi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Hp-NU-omw"/>
+                            <constraint firstItem="ZPm-Fp-VXz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BX7-Tf-48T"/>
+                            <constraint firstAttribute="trailing" secondItem="Eg0-0f-Szm" secondAttribute="trailing" constant="30" id="CbM-p7-2aa"/>
+                            <constraint firstItem="ZPm-Fp-VXz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DQR-k3-03a"/>
+                            <constraint firstItem="kho-KX-lrb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O4S-Ne-qak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rL9-wB-6SQ" secondAttribute="bottom" id="RBW-ym-gm1"/>
+                            <constraint firstItem="Eg0-0f-Szm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Ywy-d4-AEF"/>
+                            <constraint firstItem="kho-KX-lrb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jK2-hP-SLN"/>
+                            <constraint firstItem="d9M-8b-FVi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ndU-yS-9J9"/>
+                            <constraint firstItem="rL9-wB-6SQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xV1-sE-pZA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="QbsPicView" destination="Eg0-0f-Szm" id="EHq-9K-Ejm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qbs_ip4" width="400" height="297"/>
+    </resources>
+</document>
